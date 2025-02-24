@@ -1,0 +1,75 @@
+/* Modern Hex Slider Styles */
+.modern-hex-slider {
+  --swiper-pagination-bullet-horizontal-gap: 6px;
+}
+
+.modern-hex-slider .swiper-pagination {
+  position: absolute;
+  bottom: 30px !important;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+@media (min-width: 768px) {
+  .modern-hex-slider .swiper-pagination {
+    bottom: 40px !important;
+  }
+}
+
+.modern-hex-slider .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 1 !important;
+  transition: all 0.3s ease !important;
+  border-radius: 2px;
+}
+
+.modern-hex-slider .swiper-pagination-bullet-active {
+  background: white;
+  width: 32px;
+  box-shadow: 0 2px 8px rgba(255, 100, 100, 0.3);
+}
+
+/* Card Styles */
+.hex-glass {
+  position: relative;
+  background: rgba(185, 28, 28, 0.4);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(248, 113, 113, 0.3);
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px rgba(220, 38, 38, 0.1);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.hex-glass::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+.hex-glass:hover::before {
+  left: 100%;
+}
+
+/* Icon Animation */
+.hex-icon {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hex-icon:hover {
+  transform: rotate(5deg) scale(1.1);
+  box-shadow: 0 8px 32px rgba(220, 38, 38, 0.3);
+}
