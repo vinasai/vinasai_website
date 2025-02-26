@@ -32,13 +32,13 @@ export default function BookAppointment() {
   return (
     <section id="appointment" className="py-20 bg-red-50">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-3 gap-8 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
           {/* Left Side - Text & Button (2/3) */}
-          <div className="col-span-2 text-center md:text-left">
-            <h2 className="text-5xl font-extrabold text-gray-900 mb-6">
+          <div className="col-span-1 md:col-span-2 text-center md:text-left">
+            <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-6">
               Schedule Your Consultation Today!
             </h2>
-            <p className="text-xl text-gray-700 mb-8">
+            <p className="text-lg md:text-xl text-gray-700 mb-8">
               Don't wait—secure your spot now! Pick a time that works for you, and we'll handle the rest. Fast, easy, and stress-free!
             </p>
             <div className="flex justify-center md:justify-start">
@@ -54,7 +54,7 @@ export default function BookAppointment() {
             <img 
               src={logo}
               alt="Booking Illustration"
-              className="w-full max-w-md md:max-w-full rounded-lg shadow-lg object-cover"
+              className="w-full max-w-sm md:max-w-md lg:max-w-full rounded-lg shadow-lg object-cover"
             />
           </div>
         </div>
