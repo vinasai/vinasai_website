@@ -24,24 +24,20 @@ export default function Testimonials() {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-red-400 to-red-600">
-      <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-16">Client Testimonials</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <section className="py-20 bg-red-50 text-gray-900">
+      <div className="container mx-auto px-6 text-center">
+        <h2 className="text-4xl font-bold mb-12 text-[#FF2A53]">Client Testimonials</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="p-6 bg-white rounded-xl shadow-lg animate-on-scroll">
+            <div key={index} className="relative bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center transition-transform transform hover:scale-105">
               <div className="flex text-yellow-400 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <Star key={i} className="h-5 w-5 fill-current" />
                 ))}
               </div>
-              <p className="text-gray-600 mb-4">"{testimonial.text}"</p>
-              <div className="flex items-center">
-                <div>
-                  <p className="font-semibold">{testimonial.name}</p>
-                  <p className="text-gray-500 text-sm">{testimonial.role}</p>
-                </div>
-              </div>
+              <p className="text-lg italic mb-4">"{testimonial.text}"</p>
+              <p className="font-semibold text-xl text-gray-800">{testimonial.name}</p>
+              <p className="text-gray-600 text-sm">{testimonial.role}</p>
             </div>
           ))}
         </div>

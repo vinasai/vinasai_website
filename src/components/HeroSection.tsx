@@ -1,6 +1,6 @@
 import React from 'react';
 import { ChevronRight } from 'lucide-react';
-import background from '../assets/background.mp4';
+import background1 from '../assets/banner.png';
 import logo from '../assets/company_logo.png'; 
 
 export default function HeroSection() {
@@ -13,17 +13,15 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="home" className="relative w-full h-screen flex items-center justify-center text-center bg-gradient-to-b from-blue-900 to-green-800">
-     
-      <video 
-        autoPlay 
-        loop 
-        muted 
-        className="absolute top-0 left-0 w-full h-full object-cover z-0"
-      >
-        <source src={background} type="video/mp4" />
-      </video>
-      
+    <section id="home" className="relative w-full h-screen flex items-center justify-center text-center bg-gradient-to-b from-blue-900 to-green-800" 
+    style={{
+      backgroundImage: `url(${background1})`,
+      backgroundSize: 'cover', 
+      backgroundPosition: 'center', 
+      backgroundRepeat: 'no-repeat',
+      padding: '6rem', 
+    }}>
+
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60"></div>
       
       <div className="relative z-10 container mx-auto px-6 text-white">
@@ -37,11 +35,11 @@ export default function HeroSection() {
           </h1>
           
           <p className="text-xl mb-8 max-w-2xl mx-auto animate__animated animate__fadeIn animate__delay-1s">
-          VINASAI crafts top-notch development, turning ideas into reality. 
+            VINASAI crafts top-notch development, turning ideas into reality.
           </p>
           
           <button 
-            className="bg-red-600 text-black px-8 py-3 rounded-full hover:bg-red-800 transition-colors flex items-center animate__animated animate__fadeIn animate__delay-2s"
+            className="bg-red-300 text-black px-8 py-3 rounded-full hover:bg-red-400 transition-colors flex items-center animate__animated animate__fadeIn animate__delay-2s"
             onClick={scrollToAppointment}  // Add onClick to trigger scroll
           >
             Get Started <ChevronRight className="ml-2" />

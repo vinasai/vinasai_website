@@ -11,6 +11,7 @@ import Team from './Team';
 import Contact from './Contact';
 import Footer from './Footer';
 import BookAppointment from './Appointment';
+import Description from './Description';
 
 export default function HomePage() {
   useEffect(() => {
@@ -41,9 +42,8 @@ export default function HomePage() {
       <HeroSection />
       <TechStack />
       <Projects />
+      <Description />
       <Testimonials />
-    
-    
       <BookAppointment/>
       <Footer />
      
