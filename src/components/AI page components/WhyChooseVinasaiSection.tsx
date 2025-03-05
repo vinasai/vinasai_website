@@ -1,10 +1,10 @@
 import React from 'react';
-import teamImage from '../../assets/AI-Group.jpg' 
+import teamImage from '../../assets/AI-Group.png' 
 
 export default function WhyChooseVinasaiSection() {
   return (
-    <section className="py-16 bg-red-50 w-full n">
-      <div className="container mx-auto px-4">
+    <section className="py-16 bg-red-50 w-full h-auto">
+      <div className="container mx-auto ">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Image Container */}
           <div className="flex justify-center">
@@ -25,7 +25,7 @@ export default function WhyChooseVinasaiSection() {
               Why Choose Vinasai AI
             </h2>
             
-            <div className="space-y-4 text-gray-600 w-full md:w-3/4 mx-auto md:mx-0 text-justify">
+            <div className="space-y-4 text-gray-600 w-full md:w-5/6 mx-auto md:mx-0 text-justify">
               <p>
                 Our expert team brings together technical prowess and business insight 
                 to create customized AI solutions that tackle your unique challenges. 

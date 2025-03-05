@@ -83,7 +83,7 @@ export default function Navbar() {
                     <ChevronDown className={`h-5 w-5 ml-1 transition-transform ${isServicesOpen ? "rotate-180" : ""}`} />
                   </button>
                   {isServicesOpen && (
-                    <div className="absolute top-full left-0 mt-2 w-48 bg-white/80 backdrop-blur-lg rounded-lg shadow-lg shadow-red-500/50 animate-fadeIn">
+                    <div className="absolute top-full left-0 mt-5 w-48 bg-white/80 backdrop-blur-lg rounded-lg shadow-lg shadow-red-500/50 animate-fadeIn">
                       <Link
                         to="/ai" 
                         className="block px-4 py-2 text-gray-700 hover:text-red-600 transition-all duration-300 text-lg font-medium"

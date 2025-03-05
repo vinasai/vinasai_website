@@ -1,20 +1,30 @@
 import React from 'react';
+import backgroundVideo from '../../assets/AI-page/background-video.mp4';
 
 export default function HeroSection() {
   return (
     <section 
       id="home" 
-      className="relative w-full h-screen flex items-center justify-center text-center"
-      style={{
-        backgroundImage: `linear-gradient(to bottom, rgba(228, 12, 5, 0.98), rgba(243, 68, 111, 0.8)), url('/path/to/your/background-image.jpg')`, // Gradient + Image
-        backgroundSize: 'cover', 
-        backgroundPosition: 'center', 
-        backgroundRepeat: 'no-repeat',
-      }}
+      className="relative w-full h-screen flex items-center justify-center text-center overflow-hidden"
     >
-      {/* Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30"></div>
+      {/* Video Background */}
+      <video 
+        autoPlay 
+        loop 
+        muted 
+        playsInline 
+        className="absolute z-0 w-full h-full object-cover"
+      >
+        <source 
+          src={backgroundVideo}
+          type="video/mp4" 
+        />
+        Your browser does not support the video tag.
+      </video>
       
+      {/* Overlay */}
+      <div className="absolute z-1 w-full h-full bg-black opacity-50"></div>
+
       <div className="relative z-10 container mx-auto px-6 text-white">
         <div className="flex flex-col items-center text-center">
           {/* Logo */}
@@ -29,7 +39,7 @@ export default function HeroSection() {
             Transform Your Business with Intelligent Solutions
           </h1>
           {/* Subheading */}
-          <p className="text-lg mb-8 max-w-2xl mx-auto text-white">
+          <p className="text-xl mb-8 max-w-2xl mx-auto animate__animated animate__fadeIn animate__delay-1s">
             Vinasai delivers custom artificial intelligence solutions that drive real business outcomes. Our enterprise-grade AI services help you automate processes, gain actionable insights, and create exceptional customer experiences.
           </p>
         </div>
