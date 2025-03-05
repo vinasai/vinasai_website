@@ -17,7 +17,7 @@ export default function TechStackSection() {
   ];
 
   return (
-    <section className="py-16 bg-white w-full h-auto">
+    <section className="py-16 bg-red-50 w-full h-auto">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between">
           {/* Left Side: Description */}
