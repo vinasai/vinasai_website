@@ -30,7 +30,7 @@ export default function HeroSection() {
           {/* Logo */}
           <div className="inline-block">
             <div className="bg-red-500 text-white px-4 py-2 rounded-full text-lg font-semibold tracking-wider shadow-md hover:bg-red-600 transition-colors duration-300 ease-in-out">
-                Vinasai AI
+                VinasAI
             </div>
           </div>
 
