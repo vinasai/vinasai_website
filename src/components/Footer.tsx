@@ -64,14 +64,14 @@ const Footer: React.FC = () => {
             <div>
               <h3 className="text-xl font-semibold mb-4 text-red-600">Follow Us</h3>
               <div className="flex space-x-6">
-                <a href="#" className="text-black hover:text-red-600 transition-colors transform hover:scale-110">Twitter</a>
-                <a href="#" className="text-black hover:text-red-600 transition-colors transform hover:scale-110">Github</a>
-                <a href="#" className="text-black hover:text-red-600 transition-colors transform hover:scale-110">LinkedIn</a>
+                <a href="https://www.facebook.com/share/15y59Vb3AV/" className="text-black hover:text-red-600 transition-colors transform hover:scale-110">Facebook</a>
+                <a href="https://www.instagram.com/vinasai.ca?igsh=MTYwN2dxbm5nc29jNw==" className="text-black hover:text-red-600 transition-colors transform hover:scale-110">Instagram</a>
+                <a href="https://www.linkedin.com/company/vinasai/posts/?feedView=all" className="text-black hover:text-red-600 transition-colors transform hover:scale-110">LinkedIn</a>
               </div>
               <div className="mt-4">
                 <h4 className="text-lg font-semibold text-red-600">Contact Details</h4>
-                <p className="text-black mt-2">Phone: +1 (234) 567-890</p>
-                <p className="text-black">Email: <a href="mailto:info@vinasai.com" className="hover:text-red-600">info@vinasai.com</a></p>
+                <p className="text-black mt-2">Phone: <a href="tel:+14166333628" className="hover:text-red-600">+1 (416) 633-3628</a></p>
+                <p className="text-black">Email: <a href="mailto:info@vinasai.ca" className="hover:text-red-600">info@vinasai.ca</a></p>
               </div>
             </div>
             <div className="md:col-span-1">
