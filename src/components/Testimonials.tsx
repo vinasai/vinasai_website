@@ -1,5 +1,6 @@
 import React from 'react';
 import { Star } from 'lucide-react';
+import TrustBoxContainer from './TrustPilot';
 
 export default function Testimonials() {
   const testimonials = [
@@ -41,6 +42,35 @@ export default function Testimonials() {
             </div>
           ))}
         </div>
+
+        <div className="mt-16 bg-white rounded-xl shadow-lg p-8 max-w-4xl mx-auto transform hover:scale-105 transition-transform duration-300 border border-gray-100">
+          <h3 className="text-2xl font-semibold mb-4 text-[#FF2A53]">What Our Clients Say On TrustPilot</h3>
+          <div className="relative px-6 py-4 bg-gradient-to-r from-red-50 to-white rounded-lg">
+            <div className="absolute -top-3 -left-3 w-8 h-8 bg-[#FF2A53] rounded-full flex items-center justify-center text-white font-bold">
+              ★
+            </div>
+            <TrustBoxContainer />
+            <div className="absolute -bottom-3 -right-3 w-8 h-8 bg-[#FF2A53] rounded-full flex items-center justify-center text-white font-bold">
+              ★
+            </div>
+          </div>
+        </div>
+        
+        {/* Trustpilot Widget with proper React className and styling
+        <div className="mt-12 flex justify-center">
+          <div 
+            className="trustpilot-widget" 
+            data-locale="en-US" 
+            data-template-id="56278e9abfbbba0bdcd568bc" 
+            data-businessunit-id="67dafec107f885f02f1e78b0" 
+            data-style-height="52px" 
+            data-style-width="100%"
+          >
+            <a href="https://www.trustpilot.com/review/vinasai.ca" target="_blank" rel="noopener">
+              Trustpilot
+            </a>
+          </div>
+        </div> */}
       </div>
     </section>
   );
